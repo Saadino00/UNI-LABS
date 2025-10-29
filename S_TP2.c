@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 char *LoadString(int N) {
-    char *s = (char *)malloc((N + 1) * sizeof(char));
+    char *s = malloc((N + 1) * sizeof *s);
     printf("enter the string: ");
  fgets(s,N +1,stdin);
  int i=0;
@@ -79,4 +79,5 @@ int main() {
     printf("String reversed recursively: %s\n", str);
     free(str);
     return 0;
+
 }
