@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 char *LoadString(int N) {
-    char *s = malloc((N + 1) * sizeof *s);
+    char *s = (char *)malloc((N + 1) * sizeof *s);
     printf("enter the string: ");
  fgets(s,N +1,stdin);
  int i=0;
@@ -81,3 +81,4 @@ int main() {
     return 0;
 
 }
+
